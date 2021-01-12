@@ -12,5 +12,9 @@
     "axios": "^0.21.1",
     "crypto": "^1.0.1",
     "utf8": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pws019/dingtalk-simple-robot.git"
   }
 }
