@@ -1,18 +1,18 @@
 class AtMsgBase {
   static atMobiles(atConfig = {}, mobiles) {
-    atConfig.mobiles = mobiles;
+    atConfig.atMobiles = mobiles;
   }
 
   static appendMobiles(atConfig = {}, mobiles) {
     if (mobiles.forEach) {
-      if (!atConfig.mobiles) {
-        atConfig.mobiles = [];
+      if (!atConfig.atMobiles) {
+        atConfig.atMobiles = [];
       }
-      atConfig.mobiles.push(...mobiles);
+      atConfig.atMobiles.push(...mobiles);
     }
   }
 
-  static atAll(atConfig = {}, isAtAll) {
+  static atAll(atConfig = {}, isAtAll = true) {
     atConfig.isAtAll = isAtAll;
   }
 }
